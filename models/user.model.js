@@ -2,6 +2,23 @@ const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator');
 const Schema = mongoose.Schema;
 
+let addressSchema = new Schema({
+  area: { type: String },
+  road: { type: String },
+}, { _id: false });
+
+let phoneSchema = new Schema({
+  type: { type: String },
+  number: { type: String }
+}, { _id: false });
+
+let productSchema = new Schema({
+  product: { type: String },
+  cost: { type: Number },
+  quantity: { type: Number, required: true },
+  date: { type: Date, default: Date.now },
+});
+
 let userSchema = new Schema({
   username: {
     type: String,
@@ -36,23 +53,6 @@ let userSchema = new Schema({
 {
   collection: 'users',
   timestamps: true
-});
-
-let addressSchema = new Schema({
-  area: { type: String },
-  road: { type: String },
-}, { _id: false });
-
-let phoneSchema = new Schema({
-  type: { type: String },
-  number: { type: String }
-}, { _id: false });
-
-let productSchema = new Schema({
-  product: { type: String },
-  cost: { type: Number },
-  quantity: { type: Number, required: true },
-  date: { type: Date, default: Date.now },
 });
 
 userSchema.plugin(uniqueValidator);
