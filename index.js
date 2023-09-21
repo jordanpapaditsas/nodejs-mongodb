@@ -7,8 +7,12 @@ const user = require('./routes/user.route');
 const product = require('./routes/product.route');
 const user_products = require('./routes/user-product.route');
 
+const swaggerUI = require('swagger-ui-express');
+const swaggerDocument = require('./swagger');
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
 
 require('dotenv').config();
 
@@ -21,6 +25,8 @@ mongoose.connect(process.env.MONGODB_URI)
 app.use('/api/users', user);
 app.use('/api/products', product);
 app.use('/api/user-product', user_products);
+
+app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument.options));
 
 app.listen(port, () => {
   console.log('Listening on port 3000');
