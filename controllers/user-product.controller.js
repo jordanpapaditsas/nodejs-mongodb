@@ -91,7 +91,7 @@ exports.deleteProduct = async(req, res) => {
 };
 
 exports.stats = async(req, res) => {
-  console.log('For all users sum by product and count.');
+  console.log('For all users, sum by product and count.');
 
   try {
     const result = await User.aggregate(
@@ -123,9 +123,9 @@ exports.stats = async(req, res) => {
       ]
     );
     res.status(200).json({ status: true, data: result });
-    console.log('Success reading stats.');
+    console.log('Success in reading stats.');
   } catch(err) {
     res.status(400).json({ status: false, data: err });
-    console.log('Problem in stats.');
+    console.log('Problem in reading stats.');
   }
 };
