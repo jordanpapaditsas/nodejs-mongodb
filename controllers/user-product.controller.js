@@ -50,15 +50,15 @@ exports.addProduct = async(req, res) => {
 
 exports.updateProduct = async(req, res) => {
   const username = req.params.username;
-  const product_name = req.body.product_name;
-  const product_quantity = req.body.product_quantity;
-  console.log('Update product in user with username: ', username);
+  const product_id = req.body.product._id;
+  const product_quantity = req.body.product.quantity;
+  console.log('Update product in user with username: ', username, product_id, product_quantity);
 
   try {
-    const result = await User.updateOne({ username: username, "products.product": product_name },
+    const result = await User.updateOne({ username: username, 'products._id': product_id },
       {
         $set: {
-          "products.$.quantity": product_quantity
+          'products.$.quantity': product_quantity
         }
       }
     );

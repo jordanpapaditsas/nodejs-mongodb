@@ -43,8 +43,11 @@ let userSchema = new Schema({
     unique: true,
     trim: true,
     lowercase: true,
-    match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 
-            'Email address is not valid'],
+    match: [
+      /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 
+      'Email address is not valid'
+    ],
+    null: false
   },
   address: addressSchema,
   phone: { type: [phoneSchema], null: true },
