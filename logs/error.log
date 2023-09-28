@@ -1,0 +1,6 @@
+{
+  message: 'Problem in reading all users',
+  level: 'error',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 19:27:34'
+}

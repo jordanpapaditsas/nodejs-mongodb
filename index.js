@@ -9,10 +9,10 @@ const user_products = require('./routes/user-product.route');
 
 const swaggerUI = require('swagger-ui-express');
 const swaggerDocument = require('./swagger');
+const cors = require('cors');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
 
 require('dotenv').config();
 
@@ -22,6 +22,11 @@ mongoose.connect(process.env.MONGODB_URI)
     (err) => { console.log('Failed to connect to MongoDB!', err)}
   );  
 
+app.use(cors({
+  // origin: '*',
+  origin: ['https://www.test.com', 'http://localhost:8000']
+}));  
+app.use('/', express.static('files'));  
 app.use('/api/users', user);
 app.use('/api/products', product);
 app.use('/api/user-product', user_products);

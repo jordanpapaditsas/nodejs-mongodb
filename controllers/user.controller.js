@@ -1,4 +1,5 @@
 const User = require('../models/user.model');
+const logger = require('../logger/logger');
 
 exports.findAll = async(req, res) => {
   console.log('Find all users');
@@ -7,9 +8,12 @@ exports.findAll = async(req, res) => {
     const result = await User.find();
     res.status(200).json({ status: true, data: result });
     console.log('Success in reading all users.');
+    logger.info('Log info success in reading all users.');
+    // logger.log('Logger success in reading all users.');
   } catch(err) {
     res.status(400).json({ status: false, data: err });
     console.log('An error occurred in reading all users.');
+    logger.error('Problem in reading all users');
   }
 };
 
@@ -60,7 +64,7 @@ exports.create = async(req, res) => {
     console.log('Success in inserting user with username: ', req.body.username);
   } catch(err) {
     res.status(400).json({ status: false, data: err });
-    console.log('An error occurred in inserting user with username: ', username);
+    console.log('An error occurred in inserting user with username: ', req.body.username);
   }
 };
 

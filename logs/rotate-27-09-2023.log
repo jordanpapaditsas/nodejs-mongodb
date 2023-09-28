@@ -1,0 +1,150 @@
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 18:45:58'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 19:02:05'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 19:24:16'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 19:27:34'
+}
+{
+  message: 'Problem in reading all users',
+  level: 'error',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 19:27:34'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 20:01:23'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 20:06:20'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 20:09:34'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 20:13:01'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 20:13:26'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 20:14:38'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 20:19:48'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 20:20:20'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 20:20:50'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 20:20:50'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 20:20:51'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 20:20:51'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 20:21:59'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 20:36:19'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 21:25:38'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 21:29:10'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 21:37:31'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 21:47:55'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 21:52:23'
+}
+{
+  message: 'Log info success in reading all users.',
+  level: 'info',
+  label: 'Winston custom format',
+  timestamp: '27-09-2023 21:56:52'
+}
