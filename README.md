@@ -1,4 +1,4 @@
-# Nodejs-Crud
+# Nodejs-MongoDB
 
 ## Description
 This is a simple CRUD (Create, Read, Update, Delete) web application built with Node.js and Express.js, utilizing MongoDB as the database with Mongoose for modeling and interacting with data. The application focuses on managing two main entities: users and products, with a special user-products relationship.
